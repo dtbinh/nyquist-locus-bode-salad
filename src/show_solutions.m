@@ -6,14 +6,17 @@ GH = tf(N, D);
 
 
 figure;
-subplot(2,2,1);
+subplot(2,2,2);
 rlocus(GH);
 
-subplot(2,2,2);
+subplot(2,2,4);
 nyquist(GH);
 
 % Margins
 [Gm,Pm,Wgm,Wpm] = margin(GH)
+
+subplot(1,2,1, 'replace');
+bode(GH);
 
 
 

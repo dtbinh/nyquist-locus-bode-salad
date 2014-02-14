@@ -23,6 +23,7 @@ Control Theory Root Locus, Nyquist and Bode exercises with MatLab
 * [Nice Gain and Phase margin explanation](http://lpsa.swarthmore.edu/Nyquist/NyquistStability.html)
 * [How to calculate Phase and Gain Margins: Matlabs Docs](http://www.mathworks.com/help/control/ref/margin.html)
 * [Subplot: Matlab Docs](http://www.mathworks.com/help/matlab/ref/subplot.html)
+* [Nice Hand Made Bode Plot explanation][http://isa.uniovi.es/~idiaz/ADSTel/Tema.TrazadoBode.pdf]
 
 
 
