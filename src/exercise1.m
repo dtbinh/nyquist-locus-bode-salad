@@ -1,5 +1,4 @@
-
-clear;
+clear all;
 clc;
 
 N = [100];

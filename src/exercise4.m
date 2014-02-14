@@ -1,5 +1,7 @@
+clear all;
+clc;
 
-clear;
-N = [1 10/3];
-D = [1 25/2 25 0 0];
-root_locus(N, D);
+N = [0.6 2];
+D = [0.04 0.5 1 0 0];
+
+show_solutions(N, D);

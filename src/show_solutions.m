@@ -1,16 +1,15 @@
 function [] = show_solutions( N, D )
-%SHOW_SOLUTION Summary of this function goes here
-%   Detailed explanation goes here
-
+%SHOW_SOLUTION Displays Root Locus, Nyquist and Bode diagrams of given GH
+%   Input should be N, numerator and D, denominator
 
 GH = tf(N, D);
 
 
 figure;
-subplot(3,1,1);
+subplot(2,2,1);
 rlocus(GH);
 
-subplot(3,1,2);
+subplot(2,2,2);
 nyquist(GH);
 
 % Margins

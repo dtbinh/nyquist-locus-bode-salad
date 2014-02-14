@@ -1,5 +1,7 @@
-%Exercise a) 1)
 clear;
-N = [1];
+clc;
+
+N = [100];
 D = [1 8 20 0];
-root_locus(N, D);
+
+show_solutions(N, D);
