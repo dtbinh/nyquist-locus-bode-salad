@@ -1,8 +1,25 @@
 Nyquist, Locus  & Bode salad
 ========================
 
-Control Theory Root Locus, Nyquist and Bode exercises with MatLab
+Control Theory Course.
 
+Root Locus, Nyquist and Bode exercises with MatLab.
+
+
+### How to see the Step Response of every Transfer Function
+
+```matlab
+N = [100];
+D = [0.0002 0.03 1 0];
+GH = tf(N, D);
+sisotool(GH);
+```
+
+And then on the Siso Design Tool:
+
+`Analysis > Response to Step Command`
+
+You can play with the value of K and watch the Response change in real time.
 
 
 
@@ -21,6 +38,7 @@ Control Theory Root Locus, Nyquist and Bode exercises with MatLab
 
 * [Nice Gain and Phase margin explanation](http://lpsa.swarthmore.edu/Nyquist/NyquistStability.html)
 * [Nice Hand Made Bode Plot explanation](http://isa.uniovi.es/~idiaz/ADSTel/Tema.TrazadoBode.pdf)
+* [Video about Sisotool and Response to Step](https://www.youtube.com/watch?v=F0-T_VbdSd8)
 
 
 ### Matlab Docs
@@ -39,3 +57,8 @@ Control Theory Root Locus, Nyquist and Bode exercises with MatLab
 
 
 [9]: http://www.wolframalpha.com/input/?i=pole+100%2F%28s++%28s%5E2+%2B+8s+%2B+20%29%29
+
+
+### Metadata
+
+Created on February 2014 with Matlab R2011a
