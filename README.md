@@ -1,4 +1,4 @@
-nyquist-locus-bode-salad
+Nyquist, Locus  & Bode salad
 ========================
 
 Control Theory Root Locus, Nyquist and Bode exercises with MatLab
