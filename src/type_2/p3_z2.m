@@ -1,6 +1,10 @@
-function [] = show_solutions( N, D )
-%SHOW_SOLUTION Displays Root Locus, Nyquist and Bode diagrams of given GH
-%   Input should be N, numerator and D, denominator
+clear all;
+clc;
+
+%Type 0 system where P = 3 & z = 2 %
+
+N = conv([0.5 1], [0.3 1]);
+D = conv(  [0.100 1], conv([0.25 1], [0.10 1])	);
 
 GH = tf(N, D);
 
@@ -21,8 +25,4 @@ subplot(1,2,2, 'replace');
 bode(GH);
 grid;
 
-
-
-
-end
-
+title('P = 3, Z = 2, Type = 0');

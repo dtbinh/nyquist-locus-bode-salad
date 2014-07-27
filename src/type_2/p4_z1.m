@@ -1,6 +1,10 @@
-function [] = show_solutions( N, D )
-%SHOW_SOLUTION Displays Root Locus, Nyquist and Bode diagrams of given GH
-%   Input should be N, numerator and D, denominator
+clear all;
+clc;
+
+%This system represents exercise (e from Ubal's final exam
+
+N = conv([1], [1 1]);
+D = conv([1 6] , conv([1 4], [1 0 0])	);
 
 GH = tf(N, D);
 
@@ -20,9 +24,3 @@ grid;
 subplot(1,2,2, 'replace');
 bode(GH);
 grid;
-
-
-
-
-end
-
